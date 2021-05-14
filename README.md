@@ -1,14 +1,17 @@
-# Deep Multi-Type Knowledge Tracing
+# Deep Multi-Type Knowledge Tracing (DMKT)
 Code for our paper:
 
 C. Wang, S. Zhao, and S. Sahebi. Learning from Non-Assessed Resources: Deep Multi-TypeKnowledge Tracing. In Proceedings of The 14th International Conference onEducational Data Mining, 2021.
+
+If you have any questions, please email cwang25@albany.edu
 
 
 ## How to install and run 
 
 For example, to run the DMKT model on MORF dataset:
 ```angular2html
-cd DMKT 
+git clone https://github.com/persai-lab/EDM2021-DMKT
+cd EDM2021-DMKT
 conda env create -f environment.yml
 source init_env.sh
 cd deepkt
@@ -31,4 +34,4 @@ Please cite our paper if you use this code in your own work:
 
 ## Acknowledgement:
 
-This  paper  is  based  upon  work  sup-ported by the National Science Foundation under Grant No.1755910
+This  paper is based upon work supported by the National Science Foundation under Grant No.1755910
