@@ -1,28 +1,18 @@
 # Deep Multi-Type Knowledge Tracing
 Code for our paper:
 
-```
 C. Wang, S. Zhao, and S. Sahebi. Learning from Non-Assessed Resources: Deep Multi-TypeKnowledge Tracing. In Proceedings of The 14th International Conference onEducational Data Mining, 2021.
-```
 
 
 ## How to install and run 
 
-For example, to run the DKT model:
-```angular2html
-cd DMKT 
-pip install -e .
-cd dmkt_exp
-python run.py -c configs/dmkt_exp_0.json
-```
-
-Another way to run using conda:
+For example, to run the DMKT model on MORF dataset:
 ```angular2html
 cd DMKT 
 conda env create -f environment.yml
 source init_env.sh
-cd dmkt 
-python run.py -c configs/dmkt_exp_0.json
+cd deepkt
+python run.py -c configs/dmkt_morf686_best_0.json
 ```
 
 
