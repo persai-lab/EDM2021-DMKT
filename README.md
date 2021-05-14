@@ -5,6 +5,10 @@ C. Wang, S. Zhao, and S. Sahebi. Learning from Non-Assessed Resources: Deep Mult
 
 If you have any questions, please email cwang25@albany.edu
 
+## DMKT Network Architecture:
+
+![dmkt](DMKT.png)
+
 
 ## How to install and run 
 
