@@ -94,7 +94,6 @@ class DMKT(nn.Module):
             qa = sliced_qa_embed_data[i].squeeze(1)  # (batch_size, key_dim)
             q_correlation_weight = self.compute_correlation_weight(q)
             q_read_content = self.read(q_correlation_weight)
-            self.value_matrix = self.write(q_correlation_weight, qa)
 
             # should not change the order of code
             nn.init.zeros_(l_read_content)
@@ -117,6 +116,7 @@ class DMKT(nn.Module):
             summary_output = self.tanh(self.summary_fc(mastery_level))
             batch_sliced_pred = self.sigmoid(self.linear_out(summary_output))
             batch_pred.append(batch_sliced_pred)
+            self.value_matrix = self.write(q_correlation_weight, qa)
         batch_pred = torch.cat(batch_pred, dim=-1)
         return batch_pred
 
